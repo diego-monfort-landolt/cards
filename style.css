@@ -45,8 +45,11 @@ body {
 }
 
 .container .card_img {
-    width: 20rem;
+    width: 21rem;
     height: 13rem;
+
+    
+    object-fit: cover;
 }
 
 .container .h3 {
@@ -67,4 +70,8 @@ body {
     border: none;
     color: #3498db;
     background: rgba(128, 0, 128, 0.056);
+}
+.container .btn:hover {
+    transform: translateY(-0.138rem);
+    box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.4);
 }
