@@ -37,6 +37,7 @@ body {
     text-align: center;
 
     transition: all 0.25s;
+    animation: myAnim 6s ease .1s 1 normal forwards;
 }
 
 .container .card:hover {
@@ -53,25 +54,55 @@ body {
 }
 
 .container .h3 {
+    padding: .3rem;
     font-weight: 500;
 }
 .container p {
-    padding: 0 1rem;
+    text-align: left;
+    padding: .5rem 1rem;
     font-size: 1rem ;
 }
 
 .container .btn {
-    margin: 1em 0 1em;
+    margin: .5em 0 .5em;
     padding: .8em;
 
     box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     text-decoration: none;
     border: none;
-    color: #3498db;
+    color: #444;
     background: rgba(128, 0, 128, 0.056);
 }
 .container .btn:hover {
     transform: translateY(-0.138rem);
     box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateY(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateY(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateY(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateY(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateY(-6px) rotate(-1.2deg);
+	}
 }
